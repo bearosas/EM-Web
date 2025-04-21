@@ -1,0 +1,118 @@
+.sl-student-card {
+  padding: 15px;
+}
+
+.sl-student-card-top {
+  background-color: #f1f1f1; /* Background for name and UID card */
+  height: 60px; /* Smaller than the bottom card */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-left-radius: 25px; /* Round top-left corner */
+  border-top-right-radius: 25px; /* Round top-right corner */
+  border-bottom-left-radius: 25px; /* Round bottom-left corner */
+  border-bottom-right-radius: 25px; /* Round bottom-right corner */
+  border-left: 1px solid #f1f1f1; /* Border for left side */
+  border-right: 1px solid #f1f1f1; /* Border for right side */
+  border-top: 1px solid #f1f1f1; /* Border for top */
+  border-bottom: 1px solid #f1f1f1; /* Border for bottom */
+  box-shadow: 0 4px 8px rgba(71, 71, 71, 0.15); /* Strong shadow for floating effect */
+  position: relative; /* Enable positioning */
+  z-index: 1; /* Ensure top card is above bottom card */
+  margin-bottom: -20px; /* Negative margin to overlap the bottom card */
+}
+
+.sl-student-card-bottom {
+  background-color: #ffffff; /* Background for nickname and support need card */
+  height: 90px; /* Larger than the top card */
+  border-bottom-left-radius: 15px; /* Round bottom-left corner */
+  border-bottom-right-radius: 15px; /* Round bottom-right corner */
+  border-top-left-radius: 0; /* Straight top-left corner */
+  border-top-right-radius: 0; /* Straight top-right corner */
+  border: 1px solid #ffffff; /* Border matches background */
+  box-shadow: none; /* Remove shadow to emphasize top card's floating effect */
+  position: relative; /* Ensure stacking context */
+  z-index: 0; /* Ensure bottom card is below top card */
+}
+
+.sl-student-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.sl-student-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.sl-student-uid {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1;
+}
+
+.sl-student-nickname {
+  font-size: 1rem; /* Slightly larger text size */
+  color: #666;
+  line-height: 1.5; /* Adjust line height for better spacing */
+  padding-top: 10px; /* Move text farther from the top */
+}
+
+.sl-student-support-need {
+  font-size: 1rem; /* Slightly larger text size */
+  color: #666;
+  line-height: 1.5; /* Adjust line height for better spacing */
+}
+
+.sl-label-bold {
+  font-weight: bold; /* Bold style for labels */
+}
+
+.sl-btn-add-student {
+  background-color: #E5E7EB;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.sl-btn-add-student:hover {
+  background-color: #D1D5DB;
+}
+
+.sl-search-input {
+  border-radius: 20px;
+  border: 1px solid #D1D5DB;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  width: 200px;
+}
+
+.sl-btn-filter {
+  background-color: #E5E7EB;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.sl-btn-filter:hover {
+  background-color: #D1D5DB;
+}
+
+.sl-btn-edit {
+  background: none;
+  border: none;
+  color: #666;
+}
+
+.sl-btn-edit:hover {
+  color: #333;
+}

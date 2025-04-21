@@ -1,0 +1,120 @@
+.db-stat-card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+}
+
+.db-stat-card h3 {
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+}
+
+.db-stat-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.db-stat-card.db-total-students {
+  background-color: #E6F0FA;
+}
+
+.db-stat-card.db-improved-students {
+  background-color: #FFE6E6;
+}
+
+.db-stat-card.db-needs-improvement {
+  background-color: #FFF9E6;
+}
+
+.db-stat-card.db-reading-materials {
+  background-color: #FFE6F5;
+}
+
+.db-chart-card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.db-chart-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#weeklyProgressChart {
+  height: 200px !important;
+}
+
+#assessmentResultsChart {
+  height: 200px !important;
+}
+
+#overallPerformanceChart {
+  height: 200px !important;
+}
+
+#dailyLoginsChart {
+  height: 200px !important;
+}
+
+.db-overall-performance-card {
+  height: 260px; /* Adjusted to account for title and margin, aligns bottom with Daily Logins */
+}
+
+.db-top-students-card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  height: 550px; /* Adjusted to account for title and margin, aligns bottom with Daily Logins */
+  overflow-y: auto;
+}
+
+.db-top-students-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.db-top-students-card .dropdown {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.db-top-students-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.db-top-students-card li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.db-top-students-card .db-top-student-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.db-top-students-card .db-student-name {
+  flex-grow: 1;
+  font-size: 0.9rem;
+}
+
+.db-top-students-card .db-student-score {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
