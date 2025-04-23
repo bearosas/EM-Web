@@ -4,22 +4,23 @@ import { db, storage } from '../firebase';
 import { collection, getDocs, addDoc, deleteDoc, doc, serverTimestamp } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import '../styles/contents.css';
+import abc from '../assets/abc.png';
 
 // Predefined cover images
 const materialCovers = [
-  { id: 1, url: 'https://via.placeholder.com/80', name: 'Counting Stars' },
-  { id: 2, url: 'https://via.placeholder.com/80', name: 'ABC Blocks' },
-  { id: 3, url: 'https://via.placeholder.com/80', name: 'Happy Shapes' },
-  { id: 4, url: 'https://via.placeholder.com/80', name: 'Cute Animals' },
-  { id: 5, url: 'https://via.placeholder.com/80', name: 'Story Land' },
+  { id: 1, url: abc, name: 'Counting Stars', },
+  { id: 2, url: abc, name: 'ABC Blocks', },
+  { id: 3, url: abc, name: 'Happy Shapes', },
+  { id: 4, url: abc, name: 'Cute Animals', },
+  { id: 5,url: abc, name: 'Story Land' },
 ];
 
 const assessmentCovers = [
-  { id: 6, url: 'https://via.placeholder.com/80', name: 'Quiz Stars' },
-  { id: 7, url: 'https://via.placeholder.com/80', name: 'Brain Games' },
-  { id: 8, url: 'https://via.placeholder.com/80', name: 'Math Magic' },
-  { id: 9, url: 'https://via.placeholder.com/80', name: 'Word Hunt' },
-  { id: 10, url: 'https://via.placeholder.com/80', name: 'Fun Challenge' },
+  { id: 6, url: abc, name: 'Quiz Stars', },
+  { id: 7, url: abc, name: 'Brain Games', },
+  { id: 8, url: abc, name: 'Math Magic', },
+  { id: 9, url: abc, name: 'Word Hunt', },
+  { id: 10, url: abc, name: 'Fun Challenge', },
 ];
 
 const Contents = () => {
